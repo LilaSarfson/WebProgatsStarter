@@ -1,5 +1,6 @@
 :root{
 --primary:#f2b366
+--secundary:#3F2F21
 
 }
 body{
@@ -36,18 +37,19 @@ body{
 }
 .image{
     display: flex;
-    background-size: contain;
+    background-size: cover;
     margin-top: 20px;
     justify-content: center;
-
 }
 .image--main{
     border: none;
     border-radius: 10px;
+    flex-basis: auto;
+    flex:auto;
 }
 .image--text{
     position:absolute;
-    bottom: 400px;
+    bottom: 430px;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -62,14 +64,28 @@ ul{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content:space-around;
+    align-items: center;
+    flex:auto;
 }
-
-.team--patricia{
-    background-image: url(/img/pawns.jpg);
+.team--container{
     background-repeat: no-repeat;
     box-shadow: 1px 1px 1px 1px rgb(173, 164, 164);
+    background-image: url(/img/pawns.jpg);
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 350px;
 }
-.team--patricia li{
+.team--nombre{
+    color:#3F2F21;
+    font-weight:bold;
+    font-size: 20px;
+}
+.team--status{
+    color:white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 200px;
     text-align: center;
+    width: 150px;
+    margin-left: 30%;
 }

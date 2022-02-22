@@ -22,6 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    
 }
 .menu--item{
     text-decoration: none;
@@ -31,10 +32,44 @@ body{
     color:#f2b366;
     border-radius: 14px;
     width: 150px;
+    
 }
 .image{
     display: flex;
+    background-size: contain;
+    margin-top: 20px;
+    justify-content: center;
+
 }
 .image--main{
-    flex-basis: 100px 100px;
+    border: none;
+    border-radius: 10px;
+}
+.image--text{
+    position:absolute;
+    bottom: 400px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:space-around;
+}
+
+.team--patricia{
+    background-image: url(/img/pawns.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 1px 1px rgb(173, 164, 164);
+}
+.team--patricia li{
+    text-align: center;
 }

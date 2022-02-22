@@ -32,3 +32,9 @@ body{
     border-radius: 14px;
     width: 150px;
 }
+.image{
+    display: flex;
+}
+.image--main{
+    flex-basis: 100px 100px;
+}

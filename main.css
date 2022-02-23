@@ -16,6 +16,9 @@ body{
     background-color: bisque;
     padding: 15px;
 }
+.header--logo{
+    display: none;
+}
 .menu{
     text-align: center;
     display: flex;
@@ -36,25 +39,25 @@ body{
 }
 .image{
     display: flex;
-    background-size: cover;
     margin-top: 20px;
     justify-content: center;
 }
-.image--main{
-    border: none;
-    border-radius: 10px;
-    flex-basis: auto;
-    flex:auto;
-}
+
 .image--text{
-    position:absolute;
-    bottom: 130px;
+    position: absolute;
+    top:820px;
     text-align: center;
     color: white;
     font-size: 20px;
     padding: 10px;
     text-shadow: 1px 1px black;
     font-weight: bold;
+}
+.image--main{
+    border: none;
+    border-radius: 10px;
+    flex-basis: auto;
+    flex:auto;
 }
 .header2{
     color:#3F2F21
@@ -97,3 +100,37 @@ body{
 span{
     color: rgb(116, 53, 12);
 }
+
+@media (min-width: 598px) {
+    .header{
+        display: flex;
+        text-align: center;
+    }
+    .header--title{
+        display: none;
+    }
+  
+    .header--logo{
+        display: block;
+        min-width: 150px;
+        max-height: 200px;
+    }
+    .menu {
+        display: flex;
+        flex-direction:row;
+
+    }
+    .image--text{
+        position: absolute;
+        top:740px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-shadow: 1px 1px black;
+        font-weight: bold;
+    }
+    }      
+    @media(min-width: 776px){
+
+    }

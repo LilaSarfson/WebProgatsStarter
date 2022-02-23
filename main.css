@@ -48,7 +48,7 @@ body{
 }
 .image--text{
     position:absolute;
-    bottom: 430px;
+    bottom: 130px;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -73,7 +73,8 @@ body{
     margin-bottom: 15px;
     padding-top: 15px;
     padding-bottom: 2px;
-    min-width: 350px;
+    width: 70%;
+    max-width: 450px;
 }
 .team--nombre{
     color:#3F2F21;

@@ -149,9 +149,10 @@ span{
         border-radius: 0;
         background-color:bisque;
         color: #3F2F21;
+        font-weight:bold;
         }
         .menu--item:hover{
-            transform: ;
+            transform: rotate(0.5turn);
         }
         .team{
             display: flex;
@@ -168,8 +169,8 @@ span{
             transition: transform 0.5s;
 
         }
-        .menu--item:hover{
-            transform:rotate(0.5turn);
+        .team--container:hover{
+            transform:scale(1.1)
         }
 
     }

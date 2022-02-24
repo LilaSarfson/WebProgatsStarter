@@ -93,6 +93,14 @@ body{
 span{
     color: rgb(116, 53, 12);
 }
+#topup img{
+    width: 70px;
+}
+#topup{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+}
 
 @media (min-width: 598px) {
     .header{

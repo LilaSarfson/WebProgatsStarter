@@ -37,7 +37,7 @@ body{
     width: 150px;
     
 }
-.image{
+.image--text{
     height: 60vh;
     margin-top: 1rem;
     background-image: url(img/mobileCat.jpg);
@@ -46,18 +46,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-.image--text{
     color: #f2f2f2;
     text-shadow: 2px 2px #252424c5;
     font-size: 1.4rem;
   
-}
-.image--main{
-    border: none;
-    border-radius: 10px;
-    flex-basis: auto;
-    flex:auto;
 }
 .header2{
     color:#3F2F21
@@ -78,6 +70,7 @@ body{
     padding-bottom: 2px;
     width: 70%;
     max-width: 450px;
+    border-radius: 10px;
 }
 .team--nombre{
     color:#3F2F21;
@@ -103,29 +96,72 @@ span{
 
 @media (min-width: 598px) {
     .header{
-        display: flex;
-        text-align: center;
+        display: flex;;
     }
     .header--title{
         display: none;
+        justify-content:center;
     }
   
     .header--logo{
         display: block;
-        min-width: 150px;
-        max-height: 200px;
+        min-width: 70px;
+        max-height: 100px;
     }
     .menu {
-        display: flex;
         flex-direction:row;
-
     }
     .image--text{
+        background-image: url(/img/sleepingCat.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         color: #f2f2f2;
         text-shadow: 2px 2px #252424c5;
-        font-size: 1.4rem;
+        font-size: 2.4rem;
+        align-items: center;
     }
+
     }      
-    @media(min-width: 776px){
+    @media(min-width: 992px){
+        .header--logo{
+            display: none;
+        }
+        .header{
+            display: flex;
+        }
+        .header--title{
+            display: inline;
+            align-items: flex-start;
+        }
+        .menu{
+            align-items: stretch;
+            gap: 0;
+            height: 10vh;
+            
+        }
+        .menu--item{
+        border-radius: 0;
+        justify-items: center;
+        align-content: center;
+    
+        }
+        .team{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .header2{
+            display:block;
+            width: 100%;
+        }
+        .team--container{
+            flex-basis: 20%;
+            transition: transform 0.5s;
+
+        }
+        .team--container:hover{
+            transform: scale(1.2);
+        }
 
     }

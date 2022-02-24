@@ -136,22 +136,22 @@ span{
         }
         .header{
             display: flex;
+            justify-content: space-between; 
         }
         .header--title{
-            display: inline;
-            align-items: flex-start;
+        display: inline-block;
         }
         .menu{
             align-items: stretch;
             gap: 0;
-            height: 10vh;
-            
         }
         .menu--item{
         border-radius: 0;
-        justify-items: center;
-        align-content: center;
-    
+        background-color:bisque;
+        color: #3F2F21;
+        }
+        .menu--item:hover{
+            transform: ;
         }
         .team{
             display: flex;
@@ -168,8 +168,8 @@ span{
             transition: transform 0.5s;
 
         }
-        .team--container:hover{
-            transform: scale(1.2);
+        .menu--item:hover{
+            transform:rotate(0.5turn);
         }
 
     }
